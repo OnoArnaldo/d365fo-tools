@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Description>Microsoft Dynamics 365 for Finance and Operations, Application Platform model.</Description>
+  <DisplayName>Application Platform</DisplayName>
+  <Id>400</Id>
+  <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>ApplicationFoundation</d2p1:string>
+    <d2p1:string>ApplicationFoundationUnitTests</d2p1:string>
+    <d2p1:string>ApplicationPlatformUnitTests</d2p1:string>    
+    <d2p1:string>FoundationTest</d2p1:string>
+    <d2p1:string>FoundationTestCommon</d2p1:string>
+    <d2p1:string>DataFeeds</d2p1:string>
+    <d2p1:string>MasterPlanningService</d2p1:string>
+    <d2p1:string>MetadataExport</d2p1:string>
+    <d2p1:string>ScaleUnitManagement</d2p1:string>
+    <d2p1:string>ScaleUnitManagementTestCommon</d2p1:string>
+    <d2p1:string>CostAccountingService</d2p1:string>
+    <d2p1:string>WorkloadCommon</d2p1:string>
+	<d2p1:string>ScaleUnitEmulator</d2p1:string>
+  </InternalsVisibleTo>
+  <Layer>0</Layer>
+  <ModelModule>ApplicationPlatform</ModelModule>
+  <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+  <Name>ApplicationPlatform</Name>
+  <Publisher>Microsoft Corporation</Publisher>
+  <VersionBuild>0</VersionBuild>
+  <VersionMajor>7</VersionMajor>
+  <VersionMinor>0</VersionMinor>
+  <VersionRevision>0</VersionRevision>
+</AxModelInfo>

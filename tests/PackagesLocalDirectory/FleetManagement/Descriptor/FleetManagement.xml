@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Customization>DoNotAllow</Customization>
+  <Description>Sample application to demonstrate capability of the Dynamics 365 for Operations framework.</Description>
+  <DisplayName>Fleet Management</DisplayName>
+  <Id>256</Id>
+  <Layer>8</Layer>
+  <ModelModule>FleetManagement</ModelModule>
+  <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>ApplicationPlatform</d2p1:string>
+    <d2p1:string>ApplicationFoundation</d2p1:string>
+    <d2p1:string>Directory</d2p1:string>
+    <d2p1:string>Dimensions</d2p1:string>
+    <d2p1:string>SourceDocumentation</d2p1:string>
+  </ModuleReferences>
+  <Name>FleetManagement</Name>
+  <Publisher>Microsoft Corporation</Publisher>
+  <VersionBuild>1323</VersionBuild>
+  <VersionMajor>10</VersionMajor>
+  <VersionMinor>15</VersionMinor>
+  <VersionRevision>11205</VersionRevision>
+</AxModelInfo>

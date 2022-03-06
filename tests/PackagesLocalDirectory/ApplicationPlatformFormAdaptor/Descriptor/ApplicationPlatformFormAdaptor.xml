@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Description>Form adaptors for use across AppPlatform test models
+</Description>
+	<DisplayName>Application Platform Form Adaptor</DisplayName>
+    	<FormAdaptorSourceModel>ApplicationPlatform</FormAdaptorSourceModel>
+	<Id>855030</Id>
+	<Layer>0</Layer>
+	<ModelModule>ApplicationPlatformFormAdaptor</ModelModule>
+	<ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>ApplicationPlatform</d2p1:string>
+		<d2p1:string>TestEssentials</d2p1:string>
+	</ModuleReferences>
+	<Name>ApplicationPlatformFormAdaptor</Name>
+	<Publisher>Microsoft Corporation</Publisher>
+	<VersionBuild>0</VersionBuild>
+	<VersionMajor>7</VersionMajor>
+	<VersionMinor>0</VersionMinor>
+	<VersionRevision>0</VersionRevision>
+</AxModelInfo>

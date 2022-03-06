@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Description>Microsoft Dynamics 365 for Operations Application Foundation model.</Description>
+	<DisplayName>Application Foundation</DisplayName>
+	<Id>450</Id>
+	<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>CDSVirtualEntity</d2p1:string>
+		<d2p1:string>CDSVirtualEntityTest</d2p1:string>
+		<d2p1:string>DataFeeds</d2p1:string>
+		<d2p1:string>DataSharing</d2p1:string>
+		<d2p1:string>ApplicationFoundationUnitTests</d2p1:string>
+		<d2p1:string>AppFoundationTestCommon</d2p1:string>
+		<d2p1:string>FoundationTest</d2p1:string>
+		<d2p1:string>FoundationTestCommon</d2p1:string>
+		<d2p1:string>WorkloadCommon</d2p1:string>
+	</InternalsVisibleTo>
+	<Layer>0</Layer>
+	<ModelModule>ApplicationFoundation</ModelModule>
+	<ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>ApplicationPlatform</d2p1:string>
+	</ModuleReferences>
+	<Name>ApplicationFoundation</Name>
+	<Publisher>Microsoft Corporation</Publisher>
+    <VersionBuild>0</VersionBuild>
+    <VersionMajor>7</VersionMajor>
+	<VersionMinor>0</VersionMinor>
+    <VersionRevision>0</VersionRevision>
+</AxModelInfo>

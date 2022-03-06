@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Customization>DoNotAllow</Customization>
+  <Description>Microsoft Dynamics 365 for Operations - Warehouse Mobile App Task Validator Model</Description>
+  <DisplayName>Warehouse Mobile App Task Validator</DisplayName>
+  <Id>401700</Id>
+  <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Layer>0</Layer>
+  <ModelModule>WHSAppTaskValidator</ModelModule>
+  <ModelReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+  <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>ApplicationFoundation</d2p1:string>
+    <d2p1:string>ApplicationPlatform</d2p1:string>
+    <d2p1:string>ApplicationSuite</d2p1:string>
+    <d2p1:string>UnitOfMeasure</d2p1:string>
+  </ModuleReferences>
+  <Name>WHSAppTaskValidator</Name>
+  <Publisher>Microsoft</Publisher>
+  <VersionBuild>1323</VersionBuild>
+  <VersionMajor>10</VersionMajor>
+  <VersionMinor>15</VersionMinor>
+  <VersionRevision>11205</VersionRevision>
+</AxModelInfo>

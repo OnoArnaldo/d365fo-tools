@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+	<Description>Data sharing module.</Description>
+	<DisplayName>DataSharing</DisplayName>
+	<Id>856001</Id>
+	<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>DataSharingTest</d2p1:string>
+		<d2p1:string>DataSharingTestCommon</d2p1:string>
+    </InternalsVisibleTo>
+	<Layer>0</Layer>
+	<Locked>false</Locked>
+	<ModelModule>DataSharing</ModelModule>
+	<ModelReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+	<ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>ApplicationFoundation</d2p1:string>
+		<d2p1:string>ApplicationPlatform</d2p1:string>
+	</ModuleReferences>
+	<Name>DataSharing</Name>
+	<Publisher>Microsoft Corporation</Publisher>
+	<VersionBuild>0</VersionBuild>
+	<VersionMajor>7</VersionMajor>
+	<VersionMinor>0</VersionMinor>
+	<VersionRevision>0</VersionRevision>
+</AxModelInfo>

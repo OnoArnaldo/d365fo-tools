@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Customization>DoNotAllow</Customization>
+	<Description>Form adaptors for use across AppFoundation test models</Description>
+	<DisplayName>Application Foundation Form Adaptor</DisplayName>
+	<FormAdaptorSourceModel>ApplicationFoundation</FormAdaptorSourceModel>
+	<Id>855029</Id>
+	<Layer>0</Layer>
+	<ModelModule>ApplicationFoundationFormAdaptor</ModelModule>
+	<ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>ApplicationPlatform</d2p1:string>
+		<d2p1:string>ApplicationFoundation</d2p1:string>
+		<d2p1:string>TestEssentials</d2p1:string>
+	</ModuleReferences>
+	<Name>ApplicationFoundationFormAdaptor</Name>
+	<Publisher>Microsoft Corporation</Publisher>
+	<VersionBuild>0</VersionBuild>
+	<VersionMajor>7</VersionMajor>
+	<VersionMinor>0</VersionMinor>
+	<VersionRevision>0</VersionRevision>
+</AxModelInfo>

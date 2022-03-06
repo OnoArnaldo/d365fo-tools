@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+	<Description>Test essentials model provides APIs needed for writing and executing systest based unit tests especially FormAdaptor based tests.</Description>
+	<DisplayName>Test Essentials</DisplayName>
+	<FormAdaptorSourceModel>TestEssentials</FormAdaptorSourceModel>
+	<Id>20014</Id>
+	<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  		<d2p1:string>ApplicationFoundationUnitTests</d2p1:string>
+		<d2p1:string>FoundationTest</d2p1:string>
+		<d2p1:string>ElectronicReportingBusinessDocTests</d2p1:string>
+		<d2p1:string>ElectronicReportingCoreTestCommon</d2p1:string>
+		<d2p1:string>ElectronicReportingCoreTests</d2p1:string>
+		<d2p1:string>ElectronicReportingForAxTestCommon</d2p1:string>
+		<d2p1:string>ElectronicReportingForRetailTests</d2p1:string>
+		<d2p1:string>ElectronicReportingMappingTestCommon</d2p1:string>
+		<d2p1:string>ElectronicReportingMappingTests</d2p1:string>
+		<d2p1:string>ElectronicReportingSolutionsTests</d2p1:string>
+		<d2p1:string>ElectronicReportingTestCommon</d2p1:string>
+		<d2p1:string>ElectronicReportingTests</d2p1:string>
+		<d2p1:string>RegulatoryConfigurationServiceTestCommon</d2p1:string>
+		<d2p1:string>RegulatoryConfigurationServiceTests</d2p1:string>
+		<d2p1:string>TaxEngineTests</d2p1:string>
+    </InternalsVisibleTo>
+	<Layer>0</Layer>
+	<ModelModule>TestEssentials</ModelModule>
+	<ModelReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+	<ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>ApplicationPlatform</d2p1:string>
+		<d2p1:string>ApplicationFoundation</d2p1:string>
+	</ModuleReferences>
+	<Name>TestEssentials</Name>
+	<Publisher>Microsoft Corporation</Publisher>
+	<VersionBuild>0</VersionBuild>
+	<VersionMajor>7</VersionMajor>
+	<VersionMinor>0</VersionMinor>
+	<VersionRevision>0</VersionRevision>
+</AxModelInfo>

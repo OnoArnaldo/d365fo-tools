@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Customization>DoNotAllow</Customization>
+  <Description>Microsoft Dynamics 365 for Operations - Tax Engine model.</Description>
+  <DisplayName>Tax Engine</DisplayName>
+  <Id>89557003</Id>
+  <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>TaxEngineTests</d2p1:string>
+    <d2p1:string>GFMTests</d2p1:string>
+    <d2p1:string>ApplicationSuite</d2p1:string>
+    <d2p1:string>RegulatoryConfigurationServiceForTax</d2p1:string>
+    <d2p1:string>RegulatoryConfigurationServiceForTaxTests</d2p1:string>
+  </InternalsVisibleTo>
+  <Layer>0</Layer>
+  <ModelModule>TaxEngine</ModelModule>
+  <ModelReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+  <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>ApplicationPlatform</d2p1:string>
+    <d2p1:string>ApplicationFoundation</d2p1:string>
+    <d2p1:string>ElectronicReporting</d2p1:string>
+    <d2p1:string>ElectronicReportingCore</d2p1:string>
+    <d2p1:string>ElectronicReportingDotNetUtils</d2p1:string>
+    <d2p1:string>ElectronicReportingForAx</d2p1:string>
+    <d2p1:string>ElectronicReportingMapping</d2p1:string>
+    <d2p1:string>ElectronicReportingInternal</d2p1:string>
+    <d2p1:string>Ledger</d2p1:string>
+    <d2p1:string>Currency</d2p1:string>
+    <d2p1:string>Directory</d2p1:string>
+    <d2p1:string>Dimensions</d2p1:string>
+    <d2p1:string>SourceDocumentationTypes</d2p1:string>
+  </ModuleReferences>
+  <Name>TaxEngine</Name>
+  <Publisher>Microsoft Corporation</Publisher>
+  <VersionBuild>84</VersionBuild>
+  <VersionMajor>10</VersionMajor>
+  <VersionMinor>15</VersionMinor>
+  <VersionRevision>50092</VersionRevision>
+</AxModelInfo>

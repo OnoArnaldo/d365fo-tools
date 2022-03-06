@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Customization>DoNotAllow</Customization>
+  <Description>Bank types model</Description>
+  <DisplayName>BankTypes</DisplayName>
+  <Id>895571326</Id>
+  <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Layer>0</Layer>
+  <ModelModule>BankTypes</ModelModule>
+  <ModelReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+  <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>ApplicationPlatform</d2p1:string>
+  </ModuleReferences>
+  <Name>BankTypes</Name>
+  <Publisher>Microsoft Corporation</Publisher>
+  <VersionBuild>50</VersionBuild>
+  <VersionMajor>10</VersionMajor>
+  <VersionMinor>15</VersionMinor>
+  <VersionRevision>11294</VersionRevision>
+</AxModelInfo>

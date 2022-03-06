@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Customization>DoNotAllow</Customization>
+  <Description>Policy model.</Description>
+  <DisplayName>Policy</DisplayName>
+  <Id>855888</Id>
+  <Layer>0</Layer>
+  <ModelModule>Policy</ModelModule>
+  <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>ApplicationPlatform</d2p1:string>
+    <d2p1:string>ApplicationFoundation</d2p1:string>
+    <d2p1:string>Directory</d2p1:string>
+  </ModuleReferences>
+  <Name>Policy</Name>
+  <Publisher>Microsoft Corporation</Publisher>
+  <VersionBuild>48</VersionBuild>
+  <VersionMajor>10</VersionMajor>
+  <VersionMinor>15</VersionMinor>
+  <VersionRevision>43527</VersionRevision>
+</AxModelInfo>
