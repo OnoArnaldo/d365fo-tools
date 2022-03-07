@@ -21,6 +21,11 @@ Or without downloading the project:
 pip install git+https://github.com/OnoArnaldo/d365fo-tools.git
 ```
 
+In case the project is private:
+```shell
+pip install git+ssh://git@github.com/OnoArnaldo/d365fo-tools.git
+```
+
 ## How to build your script
 
 ### Directory structure
