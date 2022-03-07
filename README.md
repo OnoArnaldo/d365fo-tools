@@ -129,6 +129,10 @@ def main(args):
         case ['--env', env,'--password', password]:
             config.read('user.cfg')  # set your configuration file here
             EnvironmentSetup(password=password, tf_metadata_dir=ENV[env]).run()
+        case ['--env', env,'--password', password, '--nosync']:
+            config.read('user.cfg')  # set your configuration file here
+            config.set('COMMANDS', 'syncdb', 'echo skip dbsync {metadata_dir} {server}')  # replace command by dummy command
+            EnvironmentSetup(password=password, tf_metadata_dir=ENV[env]).run()
         case ['--build-only']:
             config.read('user.cfg')  # set your configuration file here
             asyncio.run(Builder().arun())
