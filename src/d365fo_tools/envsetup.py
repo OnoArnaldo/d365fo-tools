@@ -44,7 +44,7 @@ class EnvironmentSetup(MixinConfig):
     def change_workspace_mapping(self):
         self.log.info('Change workspace mapping')
 
-        ws = f'/workspace:"{self.tf_workspace}'
+        ws = f'/workspace:"{self.tf_workspace}"'
         login = f'/login:"{self._user or self.user}","{self._password or self.password}"'
 
         self.check_call(f'"{self.tf_exe}" workfold /unmap {ws} "{self.path_metadata}" {login}', shell=True)
@@ -56,7 +56,8 @@ class EnvironmentSetup(MixinConfig):
         self.log.info('Get latest version')
 
         login = f'/login:"{self._user or self.user}","{self._password or self.password}"'
-        self.check_call(f'"{self.tf_exe}" get /force /recursive /noautoresolve /noprompt {login}', shell=True)
+        self.check_call(f'"{self.tf_exe}" get "{self.path_metadata}" '
+                        f'/force /recursive /noautoresolve /noprompt {login}', shell=True)
 
     def build_models(self):
         asyncio.run(builder.Builder(self._package_filter).arun())

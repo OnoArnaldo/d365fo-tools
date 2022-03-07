@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 from subprocess import check_call
+from asyncio import create_subprocess_shell
 from generic.registry import Registry, SimpleAxis
 from ..core import Log, Folder
 
@@ -25,6 +26,10 @@ class Dependency(Registry):
     @property
     def datetime(self) -> datetime:
         return self.lookup('datetime') or datetime
+
+    @property
+    def create_subprocess_shell(self) -> create_subprocess_shell:
+        return self.lookup('create_subprocess_shell') or create_subprocess_shell
 
 
 dependency = Dependency(('name', SimpleAxis()))

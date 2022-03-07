@@ -115,7 +115,8 @@ Your script can be something like that:
 
 ```python
 import sys
-from d365fo_tools.envsetup import EnvironmentSetup
+import asyncio
+from d365fo_tools import EnvironmentSetup, Builder, config
 
 ENV = {
     'dev': '$proj001/trunk/dev/metadata',
@@ -126,13 +127,20 @@ ENV = {
 def main(args):
     match args:
         case ['--env', env,'--password', password]:
+            config.read('user.cfg')  # set your configuration file here
             EnvironmentSetup(password=password, tf_metadata_dir=ENV[env]).run()
+        case ['--build-only']:
+            config.read('user.cfg')  # set your configuration file here
+            asyncio.run(Builder().arun())
+        case ['--build-all']:
+            config.read('user.cfg')  # set your configuration file here
+            asyncio.run(Builder(package_filter=['.*']).arun())
         case _:
             print('Usage:')
             print('  python main.py --env [dev|uat|prod] --password [the-password]')
 
 if __name__ == '__main__':
-    main(sys[1:])
+    main(sys.argv[1:])
 ```
 
 Then you just call you script.

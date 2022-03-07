@@ -12,8 +12,11 @@ class PackageReference(MixinConfig):
     def __init__(self, package_filter: _.Iterable[str] = None) -> None:
         self._package_filter = package_filter
 
+    def descriptor(self, package_path: 'Path') -> 'Path':
+        return package_path.joinpath('Descriptor', f'{package_path.name}.xml')
+
     def get_references(self, package_path: 'Path', packages: set) -> set:
-        descriptor = package_path.joinpath('Descriptor', f'{package_path.name}.xml')
+        descriptor = self.descriptor(package_path)
 
         xml = ElementTree.parse(descriptor).getroot()
         for references in xml.findall('ModuleReferences'):
@@ -26,11 +29,9 @@ class PackageReference(MixinConfig):
         packages = set(package.packages())
         package_names = {pkg.name for pkg in packages}
 
-        result = {}
-        for pkg in packages:
-            result[pkg.name] = self.get_references(pkg, package_names)
-
-        return result
+        return {pkg.name: self.get_references(pkg, package_names)
+                for pkg in packages
+                if self.descriptor(pkg).exists()}
 
 
 class BuildOrder(MixinConfig):
@@ -77,6 +78,7 @@ class Builder(MixinConfig):
             for package in sorted(level):
                 self.log.log(f'  Building: {package}')
 
+                self.folder.create(self.path(self.path_log).joinpath(package))
                 self.check_call(self.cmd_build.format(
                     metadata_dir=self.path_metadata,
                     module=package,
@@ -86,13 +88,25 @@ class Builder(MixinConfig):
     def command(self, module: str) -> str:
         return self.cmd_build.format(metadata_dir=self.path_metadata, log_dir=self.path_log, module=module)
 
-    async def worker(self, idx: int, queue: asyncio.Queue) -> None:
+    async def worker(self, idx: int, level: int, queue: asyncio.Queue) -> None:
         while True:
             package = await queue.get()
-            self.check_call(self.command(module=package), shell=True)
+
+            self.folder.create(self.path(self.path_log).joinpath(package))
+
+            proc = await self.create_subprocess_shell(
+                self.command(module=package),
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE)
+            stdout, stderr = await proc.communicate()
+
             queue.task_done()
 
-            self.log.info(f'{idx}: {package!r} has been built.')
+            self.log.info(f'{idx}: {level}: {package!r} has been built.')
+            if stdout:
+                self.log.info(f'{stdout.decode()}')
+            if stderr:
+                self.log.error(f'{stderr.decode()}')
 
     async def arun(self):
         self.log.info(f'Build: {self.path_metadata}')
@@ -102,9 +116,10 @@ class Builder(MixinConfig):
             self.log.log(f'  Level: {idx}')
 
             for package in sorted(level):
+                self.log.log(f'    Package: {package}')
                 queue.put_nowait(package)
 
-            tasks = [asyncio.create_task(self.worker(i, queue))
+            tasks = [asyncio.create_task(self.worker(idx, i, queue))
                      for i in range(self.workers)]
 
             await queue.join()

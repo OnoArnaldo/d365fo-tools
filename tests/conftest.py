@@ -78,4 +78,15 @@ def FakeFolder(log: list):
         def delete(cls, path):
             log.append(f'FOLDER:DELETE:{path}')
 
+        @classmethod
+        def create(cls, path):
+            log.append(f'FOLDER:CREATE:{path}')
+
     return Folder
+
+
+def fake_create_subprocess_shell(log: list):
+    def create_subprocess_shell(cmd, **kwargs):
+        log.append(f'CREATE_SUBPROCESS_SHELL:{cmd}')
+
+    return create_subprocess_shell

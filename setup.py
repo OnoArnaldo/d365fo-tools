@@ -6,7 +6,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='d365fo_tools',
-    version='1.0.0.1',
+    version='1.0.0.3',
     description='Basic tools for D365FO.',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -29,4 +29,7 @@ setup(
     extras_require={
         'test': ['pytest'],
     },
+
+    include_package_data=True,
+    package_data={'d365fo_tools': ['config/defaults.cfg']},
 )

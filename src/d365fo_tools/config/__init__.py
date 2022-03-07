@@ -5,7 +5,9 @@ from .dependency import dependency
 
 if _.TYPE_CHECKING:
     from subprocess import check_call
+    from asyncio import create_subprocess_shell
     from datetime import datetime
+    from pathlib import Path
     from .parser import Section
     from ..core import Folder, Log
 
@@ -106,11 +108,11 @@ class MixinConfig:
         return dependency.check_call
 
     @property
-    def folder(self) -> 'Folder':
+    def folder(self) -> _.Type['Folder']:
         return dependency.Folder
 
     @property
-    def log(self) -> 'Log':
+    def log(self) -> _.Type['Log']:
         return dependency.Log
 
     @property
@@ -118,6 +120,10 @@ class MixinConfig:
         return dependency.datetime
 
     @property
-    def path(self):
+    def path(self) -> _.Type['Path']:
         return dependency.Path
+
+    @property
+    def create_subprocess_shell(self) -> 'create_subprocess_shell':
+        return dependency.create_subprocess_shell
     # endregion
