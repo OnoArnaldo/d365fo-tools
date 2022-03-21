@@ -25,7 +25,7 @@ class PackageReference(MixinConfig):
     def run(self) -> dict[str, set]:
         metadata = self.path(self.path_metadata)
 
-        package = Package(metadata_path=metadata, package_filter=self._package_filter or self.package_filter or ['.*'])
+        package = Package(metadata_path=metadata, package_filter=self._package_filter or self.package_filter)
         packages = set(package.packages())
         package_names = {pkg.name for pkg in packages}
 

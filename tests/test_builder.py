@@ -25,7 +25,7 @@ def test_get_package_references_with_packages_filter(log):
     }
 
 
-def test_get_package_references_without_filter(log):
+def test_get_package_references_catch_all_filter(log):
     config.set('DEFAULTS', 'package_filter', '.*')
     result = PackageReference().run()
 
@@ -436,6 +436,13 @@ def test_get_package_references_without_filter(log):
     }
 
 
+def test_get_package_references_without_filter(log):
+    config.set('DEFAULTS', 'package_filter', '')
+    result = PackageReference().run()
+
+    assert result == {}
+
+
 def test_get_build_order_with_packages_filter(log):
     result = BuildOrder(['Application.*']).run()
 
@@ -448,7 +455,7 @@ def test_get_build_order_with_packages_filter(log):
     ]
 
 
-def test_get_build_order_without_filter(log):
+def test_get_build_order_catch_all_filter(log):
     config.set('DEFAULTS', 'package_filter', '.*')
     result = BuildOrder().run()
 
@@ -493,6 +500,13 @@ def test_get_build_order_without_filter(log):
          'EntAssetManufacturingExecutionBackoffice', 'EntAssetManufacturingExecutionInterface', 'PaymentPredictor',
          'WarehouseExecutionWorkload'}
     ]
+
+
+def test_get_build_order_without_filter(log):
+    config.set('DEFAULTS', 'package_filter', '')
+    result = BuildOrder().run()
+
+    assert list(result) == []
 
 
 def test_build_one_module(log):
