@@ -6,7 +6,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='d365fo_tools',
-    version='1.0.0.3',
+    version='1.0.0.4',
     description='Basic tools for D365FO.',
     long_description=long_description,
     long_description_content_type='text/markdown',

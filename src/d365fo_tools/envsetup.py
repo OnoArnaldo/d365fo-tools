@@ -19,7 +19,7 @@ class EnvironmentSetup(MixinConfig):
 
     def calculate_packages(self):
         metadata = self.path(self.path_metadata)
-        
+
         self.packages = list(Package(metadata_path=metadata, package_filter=self._package_filter or self.package_filter).packages())
 
     def create_log_folder(self):
