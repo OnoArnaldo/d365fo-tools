@@ -2,6 +2,8 @@
 
 At the moment the tools are mainly built in python.
 
+> Please note this is still experimental.
+> Do not use before testing in a safe environment.
 
 ## Installation
 
