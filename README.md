@@ -53,7 +53,8 @@ The configuration file can have the following keys:
 user=
 password=
 workers=8
-package_filter=.*
+; the folders in this filter will be deleted in the begining of the process
+package_filter=
 
 [DATABASE]
 ; values for database synchronisation
